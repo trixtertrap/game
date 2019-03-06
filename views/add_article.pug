@@ -1,0 +1,23 @@
+extends layout
+
+block content
+
+    h1 Add Games
+    form(method='POST', action="/articles/add")
+        #form-group
+            label Title:
+            input.form-control(name='title', type='text')
+        #form-group
+            label Description:
+            input.form-control(name='description', type='text')
+        #form-group
+            label Map:
+            input.form-control(name='map', type='text')
+        #form-group
+            label Time:
+            input.form-control(name='time', type='text')
+        #form-group
+            label Entry Fees:
+            input.form-control(name='fees', type='text')
+        br
+        input.btn.btn-primary(type='submit', value='Submit')

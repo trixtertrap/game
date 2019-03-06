@@ -1,0 +1,18 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/c6/a5/1e/c6a51e94aebe9e51ffc8a056d26f0810.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.alert-error{
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.alert-success_msg {
+    color: #3c763d;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}

@@ -1,0 +1,18 @@
+extends layout
+
+block content
+
+    h1= articles.title
+    h4 Written By #{author}
+    p= articles.description
+    p= articles.map
+    p= articles.time
+    p= articles.fees
+    hr
+    if user
+        a.btn.btn-outline-primary(href='/members/addmembers') Register
+
+            if user.id == articles.author
+            a.btn.btn-primary(href="/articles/edit/"+ articles._id) Edit
+            a.btn.btn-danger.delete-article(href='#', data-id=articles._id) Delete
+            
